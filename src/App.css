@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.logo{
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.logo:hover{
+  color: brown;
+}
+
+
+  
+
+.img {
+  position: relative;
+}
+
+.img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.tenor.com/JU1RXFmyZI8AAAAM/rainbow-colors.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1; /* Adjust the opacity value as needed */
+  z-index: -1;
+}
