@@ -23,9 +23,7 @@ useEffect(() => {
     fetch('https://prjbackend.vercel.app/').then((resp)=>{
         resp.json().then((data)=>data.map((index)=>allcode.push(index)))
     }).then((setcode(allcode),setlistData(allcode)))
-    // .then(   setInterval(() => {
-    //     setswocode(true)
-    //     }, 1000))
+  
  
 }, []);
 
@@ -54,11 +52,15 @@ useEffect(() => {
         const keyword=e.target.value.toLowerCase()
         
              const list=code.filter((item) =>{
+              
+             
               return  item.titel.toLowerCase().includes(keyword)
+              
              })
                     
                     setlistData(list)
                     
+             
           
          
          

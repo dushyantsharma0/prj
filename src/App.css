@@ -78,3 +78,22 @@
         
     }
 }
+
+
+.searchbar{
+  overflow: scroll !important;;
+  width: 200px;
+  height: 100px;
+ 
+  background: red;
+  cursor: pointer;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
+  z-index: 9000;
+  
+  
+}
+.searchbar::-webkit-scrollbar{
+  display: none;
+}
