@@ -7,6 +7,7 @@ import Main from './components/main';
 import Admin from './components/admin';
 import Protection from './components/protrction';
 import { useEffect, useState } from 'react';
+import MyComponent from './components/dleate';
 
 
 
@@ -26,7 +27,7 @@ function App() {
         
           
           <Route path="/" element={<Login />} />
-
+          <Route path="/comp" element={<MyComponent/>} />
           
          
         </Routes>

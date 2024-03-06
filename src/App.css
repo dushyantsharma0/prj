@@ -40,9 +40,11 @@
 .logo{
   cursor: pointer;
   margin-bottom: 4px;
+  
 }
 .logo:hover{
   color: brown;
+
 }
 
 
@@ -58,10 +60,21 @@
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100vh;
   height: 100%;
   background-image: url("https://media.tenor.com/JU1RXFmyZI8AAAAM/rainbow-colors.gif");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1; /* Adjust the opacity value as needed */
   z-index: -1;
+}
+
+.tgr{
+    display: flex;
+}
+@media only screen and (max-width: 800px){
+  .tgr{
+        display: block;
+        
+    }
 }
